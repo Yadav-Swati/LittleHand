@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="image/icon.png" type="image/icon type">
+    <title>Registration</title>
+  </head>
+  <body class="zzzz">
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Kanya </a>
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+
+        <a href="emergency.html">emergency</a>
+        <a href="book.html">book</a>
+        <a href="dds.html" >do's & don'ts</a>
+        <a href="resource.html" >resources</a>
+        <a href="form.html">register</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">More Links
+            <i class="fas fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="doctors.html">doctors</a>
+            <a href="review.html" >review</a>
+            <a href="blog.html" >blogs</a>
+          </div>
+        </div>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+    
+    <div class="FORM-BOX">
+      <h2>Register Now</h2>
+      <div class="inputBox">
+        <label
+          >First Name:<input
+            type="text"
+            name="fname"
+            placeholder="First name"
+            required
+        /></label>
+        <label
+          >Last Name:<input
+            type="text"
+            name="lname"
+            placeholder="Last name"
+            required
+        /></label>
+      </div>
+
+      <div class="inputBox">
+        <label
+          >Email:<input
+            type="email"
+            name="mail"
+            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+            placeholder="email-id"
+            required
+        /></label>
+      </div>
+
+      <div>
+        <label
+          >Password:<input
+            type="password"
+            name="pass"
+            pattern=".{10,}"
+            placeholder="More than 10 Characters"
+            required
+        /></label>
+      </div>
+      <h4>Select Gender:</h4>
+      <div class="inputBox">
+        <label
+          >Male:<input
+            id="male"
+            type="radio"
+            name="gender"
+            value="male"
+            required
+        /></label>
+      </div>
+      <div>
+        <label
+          >Female:<input
+            id="female"
+            type="radio"
+            name="gender"
+            value="female"
+            required
+        /></label>
+      </div>
+      <div>
+        <label
+          >Other:<input
+            id="other"
+            type="radio"
+            name="gender"
+            value="other"
+            required
+        /></label>
+      </div>
+
+      <div class="inputBox">
+        <label
+          >Contact no. :<input
+            type="text"
+            name="pass"
+            pattern=".{10,}"
+            placeholder="mobile no."
+            required
+        /></label>
+      </div>
+
+      <div class="inputBox">
+        <label
+          >Alternate no. :<input
+            type="text"
+            name="pass"
+            pattern=".{10,}"
+            placeholder="mobile no."
+            optional
+        /></label>
+      </div>
+
+      <div class="inputBox">
+        <label>Date Of Birth:<input type="date" name="dob" required /></label>
+      </div>
+      <div class="inputBox">
+        <label
+          >Blood Group:
+          <select>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </label>
+      </div>
+      <div class="inputBox">
+        <label
+          >Address:<input
+            type="text"
+            name="Address"
+            placeholder="Address"
+            required
+        /></label>
+      </div>
+      <div class="inputbox">
+        <h4></h4>
+        <input type="checkbox" name="agree" required /><span
+          class="slider round"
+        ></span>
+        <label>I Agree To Terms And Conditions: ></label>
+      </div>
+
+      <div class="inputBox">
+        <input type="button" class="registerbtn" value="Submit" />
+      </div>
+    </div>
+  </body>
+</html>
